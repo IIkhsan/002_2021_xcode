@@ -12,4 +12,4 @@
 ### Ссылки
 https://habr.com/ru/post/312766/ - то что я не успел затронуть, но будет полезно при работе со сторибордами
 https://github.com/raywenderlich/swift-style-guide - стайл гайд по свифту
-
+https://youtu.be/htOgtZV-GYA - видео с занятия
