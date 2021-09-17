@@ -43,8 +43,8 @@ class ComponentsViewController: UIViewController {
         slider.setValue(Float.random(in: 0...1), animated: true)
         stepper.stepValue = Double(Int.random(in: 1...10))
         pickerView.selectRow(Int.random(in: 0...2), inComponent: 0, animated: true)
-        let calendarId: [Calendar.Identifier] = [.ethiopicAmeteMihret, .chinese, .gregorian]
-        datePicker.calendar = Calendar(identifier: calendarId.randomElement()!)
+        let calendarId: Calendar.Identifier = [.ethiopicAmeteMihret, .chinese, .gregorian].randomElement()!
+        datePicker.calendar = Calendar(identifier: calendarId)
     }
     
     @IBAction func stepperAction(_ sender: UIStepper) {
