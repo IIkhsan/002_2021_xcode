@@ -346,10 +346,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7gp-3E-gHr">
-                                <rect key="frame" x="75" y="74" width="51" height="31"/>
+                                <rect key="frame" x="65" y="74" width="51" height="31"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nC-W7-nSR">
-                                <rect key="frame" x="251" y="74" width="69" height="36"/>
+                                <rect key="frame" x="271" y="74" width="69" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Change"/>
                                 <connections>
@@ -357,13 +357,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plain label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aB-cx-TGm">
-                                <rect key="frame" x="55.333333333333336" y="135" width="88.333333333333314" height="24"/>
+                                <rect key="frame" x="45.333333333333336" y="135" width="88.333333333333314" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="text" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v9E-gb-i7f">
-                                <rect key="frame" x="261" y="130" width="49" height="34"/>
+                                <rect key="frame" x="281" y="130" width="49" height="34"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -376,26 +376,26 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PQV-x1-Vn6">
-                                <rect key="frame" x="34" y="302" width="131" height="32"/>
+                                <rect key="frame" x="24" y="302" width="131" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VMj-PJ-vUO">
-                                <rect key="frame" x="233.66666666666663" y="302" width="104" height="32"/>
+                                <rect key="frame" x="253.66666666666663" y="302" width="104" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="juJ-Hp-QaZ"/>
                                 </constraints>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poB-Br-Rny">
-                                <rect key="frame" x="68.666666666666671" y="363" width="62.000000000000014" height="21"/>
+                                <rect key="frame" x="58.666666666666657" y="363" width="62" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="26f-Ke-mhm">
-                                <rect key="frame" x="52.666666666666657" y="389" width="94" height="32"/>
+                                <rect key="frame" x="42.666666666666657" y="389" width="94" height="32"/>
                                 <connections>
                                     <action selector="stepperAction:" destination="DQl-48-Tht" eventType="valueChanged" id="5w2-A8-Cpd"/>
                                 </connections>
@@ -408,12 +408,18 @@
                                 </constraints>
                             </datePicker>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ye-7j-Qnh">
-                                <rect key="frame" x="210.66666666666663" y="355" width="150" height="100"/>
+                                <rect key="frame" x="230.66666666666663" y="355" width="150" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="fer-cA-Shd"/>
                                     <constraint firstAttribute="width" constant="150" id="wO4-60-Rqa"/>
                                 </constraints>
                             </pickerView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-AF-0N3">
+                                <rect key="frame" x="149" y="280" width="92" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="Y6M-FI-d8c"/>
+                                </constraints>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kVf-zY-h9t"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -425,24 +431,26 @@
                             <constraint firstItem="0aB-cx-TGm" firstAttribute="top" secondItem="7gp-3E-gHr" secondAttribute="bottom" constant="30" id="3Lf-c4-L8H"/>
                             <constraint firstItem="26f-Ke-mhm" firstAttribute="centerX" secondItem="poB-Br-Rny" secondAttribute="centerX" id="4e2-4e-E7R"/>
                             <constraint firstItem="7gp-3E-gHr" firstAttribute="top" secondItem="kVf-zY-h9t" secondAttribute="top" constant="30" id="7Hd-k2-SCF"/>
-                            <constraint firstItem="7gp-3E-gHr" firstAttribute="leading" secondItem="kVf-zY-h9t" secondAttribute="leading" constant="75" id="Cfk-kX-S7z"/>
+                            <constraint firstItem="7gp-3E-gHr" firstAttribute="leading" secondItem="kVf-zY-h9t" secondAttribute="leading" constant="65" id="Cfk-kX-S7z"/>
                             <constraint firstItem="v9E-gb-i7f" firstAttribute="centerX" secondItem="2nC-W7-nSR" secondAttribute="centerX" id="Dsa-39-giu"/>
                             <constraint firstItem="poB-Br-Rny" firstAttribute="top" secondItem="PQV-x1-Vn6" secondAttribute="bottom" constant="30" id="EaC-lm-aIP"/>
                             <constraint firstItem="9Ye-7j-Qnh" firstAttribute="centerX" secondItem="VMj-PJ-vUO" secondAttribute="centerX" id="KiO-Ii-odB"/>
                             <constraint firstItem="VMj-PJ-vUO" firstAttribute="centerY" secondItem="PQV-x1-Vn6" secondAttribute="centerY" id="QIn-FM-1KB"/>
+                            <constraint firstItem="Vfl-AF-0N3" firstAttribute="top" secondItem="0s0-EQ-UbU" secondAttribute="bottom" constant="8" symbolic="YES" id="SEU-Bo-Erq"/>
                             <constraint firstItem="VMj-PJ-vUO" firstAttribute="top" secondItem="PQV-x1-Vn6" secondAttribute="top" id="T1j-wM-e2H"/>
                             <constraint firstItem="VMj-PJ-vUO" firstAttribute="centerX" secondItem="2nC-W7-nSR" secondAttribute="centerX" id="d4X-8M-euz"/>
                             <constraint firstItem="v9E-gb-i7f" firstAttribute="centerY" secondItem="0aB-cx-TGm" secondAttribute="centerY" id="gm8-W2-sJd"/>
                             <constraint firstItem="26f-Ke-mhm" firstAttribute="top" secondItem="poB-Br-Rny" secondAttribute="bottom" constant="5.0000000000000568" id="jL1-pZ-UAd"/>
                             <constraint firstItem="2nC-W7-nSR" firstAttribute="top" secondItem="7gp-3E-gHr" secondAttribute="top" id="jdj-Sb-R19"/>
                             <constraint firstItem="0s0-EQ-UbU" firstAttribute="trailing" secondItem="kVf-zY-h9t" secondAttribute="trailing" constant="-50" id="lzH-Ew-cTI"/>
+                            <constraint firstItem="Vfl-AF-0N3" firstAttribute="centerX" secondItem="kVf-zY-h9t" secondAttribute="centerX" id="mVk-uY-3Do"/>
                             <constraint firstItem="PQV-x1-Vn6" firstAttribute="top" secondItem="0s0-EQ-UbU" secondAttribute="bottom" constant="30" id="maS-DX-Vpy"/>
                             <constraint firstItem="hjU-ac-Iv8" firstAttribute="centerX" secondItem="kVf-zY-h9t" secondAttribute="centerX" id="rRj-oX-4L1"/>
                             <constraint firstItem="26f-Ke-mhm" firstAttribute="centerX" secondItem="PQV-x1-Vn6" secondAttribute="centerX" id="tBU-9h-zfn"/>
                             <constraint firstItem="0s0-EQ-UbU" firstAttribute="leading" secondItem="kVf-zY-h9t" secondAttribute="leading" constant="50" id="tMX-fg-4Tf"/>
                             <constraint firstItem="0s0-EQ-UbU" firstAttribute="top" secondItem="0aB-cx-TGm" secondAttribute="bottom" constant="30" id="v5Q-Ef-pDS"/>
                             <constraint firstItem="PQV-x1-Vn6" firstAttribute="centerX" secondItem="0aB-cx-TGm" secondAttribute="centerX" id="zUr-Il-T7K"/>
-                            <constraint firstItem="kVf-zY-h9t" firstAttribute="trailing" secondItem="2nC-W7-nSR" secondAttribute="trailing" constant="70" id="zs5-GS-f0U"/>
+                            <constraint firstItem="kVf-zY-h9t" firstAttribute="trailing" secondItem="2nC-W7-nSR" secondAttribute="trailing" constant="50" id="zs5-GS-f0U"/>
                         </constraints>
                     </view>
                     <connections>
@@ -451,6 +459,7 @@
                         <outlet property="datePicker" destination="hjU-ac-Iv8" id="zwE-Wg-6ZU"/>
                         <outlet property="pickerView" destination="9Ye-7j-Qnh" id="c6e-CO-2jO"/>
                         <outlet property="plainLabel" destination="0aB-cx-TGm" id="F1u-4g-qnh"/>
+                        <outlet property="progressView" destination="Vfl-AF-0N3" id="jfN-Gl-8Nc"/>
                         <outlet property="segmentedControl" destination="PQV-x1-Vn6" id="8Yu-Tk-74n"/>
                         <outlet property="slider" destination="VMj-PJ-vUO" id="0MO-kS-sEp"/>
                         <outlet property="stepper" destination="26f-Ke-mhm" id="BYE-js-giW"/>
@@ -461,7 +470,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AL-9t-ky0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="802"/>
+            <point key="canvasLocation" x="1050.7692307692307" y="801.89573459715632"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OAF-9C-viN">

@@ -16,6 +16,7 @@ class ComponentsViewController: UIViewController {
     @IBOutlet weak var plainLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var counterLabel: UILabel!
@@ -39,6 +40,7 @@ class ComponentsViewController: UIViewController {
         plainLabel.textColor = [#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1), #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1), #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)].randomElement()
         textField.font = [UIFont(name: "ArialMT", size: 15), UIFont(name: "Courier", size: 15)].randomElement()!
         textView.text = String(textView.text.dropLast(5))
+        progressView.setProgress(Float.random(in: 0...1), animated: true)
         segmentedControl.selectedSegmentIndex = Int.random(in: 0...1)
         slider.setValue(Float.random(in: 0...1), animated: true)
         stepper.stepValue = Double(Int.random(in: 1...10))
