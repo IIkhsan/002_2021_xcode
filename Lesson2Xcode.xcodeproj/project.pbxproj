@@ -15,7 +15,6 @@
 		5EFCD63926F0F292009A09F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFCD63726F0F292009A09F4 /* LaunchScreen.storyboard */; };
 		D251D96F26F1DC7F0025F1DC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D251D96E26F1DC7F0025F1DC /* TestViewController.swift */; };
 		D251D97126F1DCA80025F1DC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D251D97026F1DCA80025F1DC /* ProfileViewController.swift */; };
-		D291CF7126F339E500B94082 /* ViewControllerExstension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D291CF7026F339E500B94082 /* ViewControllerExstension.swift */; };
 		D291CF7326F33D2B00B94082 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D291CF7226F33D2B00B94082 /* CustomCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		5EFCD63A26F0F292009A09F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D251D96E26F1DC7F0025F1DC /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		D251D97026F1DCA80025F1DC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		D291CF7026F339E500B94082 /* ViewControllerExstension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExstension.swift; sourceTree = "<group>"; };
 		D291CF7226F33D2B00B94082 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +74,6 @@
 		D251D96A26F1D3D70025F1DC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D291CF6F26F3389800B94082 /* Extensions */,
 				D251D96D26F1D3EE0025F1DC /* Delegates */,
 			);
 			path = Model;
@@ -109,14 +106,6 @@
 				5EFCD62E26F0F28F009A09F4 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
-			sourceTree = "<group>";
-		};
-		D291CF6F26F3389800B94082 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				D291CF7026F339E500B94082 /* ViewControllerExstension.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +183,6 @@
 				5EFCD62D26F0F28F009A09F4 /* AppDelegate.swift in Sources */,
 				D251D97126F1DCA80025F1DC /* ProfileViewController.swift in Sources */,
 				D251D96F26F1DC7F0025F1DC /* TestViewController.swift in Sources */,
-				D291CF7126F339E500B94082 /* ViewControllerExstension.swift in Sources */,
 				5EFCD62F26F0F28F009A09F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

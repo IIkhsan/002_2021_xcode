@@ -20,7 +20,7 @@ class InitialViewController: UIViewController {
     }
     
     //MARK: - Helpers
-    func configure() {
+    private func configure() {
         self.title = ""
         
         firstScreenButton.layer.borderWidth = 1

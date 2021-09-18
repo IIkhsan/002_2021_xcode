@@ -7,13 +7,18 @@
 
 import UIKit
 
-class TestViewController: UIViewController {
+class TestViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     //MARK: - Outlets
+    @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var stepper: UIStepper!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var testSwitch: UISwitch!
-    @IBOutlet weak var testTextField: UITextField!
     @IBOutlet weak var changeButton: UIButton!
+    @IBOutlet weak var textField: UITextField!
     
     //MARK: - Var
     let values = ["Hello", "Hi", "Nice", "Well"]
@@ -28,9 +33,25 @@ class TestViewController: UIViewController {
     @IBAction func changeButtonTapped(_ sender: Any) {
         randomValues()
     }
+    //MARK: - Picker view data source
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return values.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return values[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        textLabel.text = String(component)
+    }
     
     //MARK: - Helpers
-    func configure() {
+    private func configure() {
         changeButton.layer.borderWidth = 1
         changeButton.layer.cornerRadius = 15
         changeButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
@@ -38,12 +59,15 @@ class TestViewController: UIViewController {
        
         textLabel.text = values.randomElement()
         testSwitch.isOn.toggle()
-        testTextField.text = values.randomElement()
+        textField.text = values.randomElement()
     }
     
-    func randomValues() {
+    private func randomValues() {
         textLabel.text = values.randomElement()
         testSwitch.isOn.toggle()
-        testTextField.text = values.randomElement()
+        textField.text = values.randomElement()
+        slider.setValue(Float.random(in: 0...1), animated: true)
+        progressView.progress = Float.random(in: 0...1)
+        segmentControl.selectedSegmentIndex = Int.random(in: 0...1)
     }
 }
