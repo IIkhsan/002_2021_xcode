@@ -51,11 +51,10 @@ class InstagramViewController: UIViewController {
         nameLabel.text = user.name
         descriptionLabel.text = user.description
         
-        for (index, story) in storiesImageViews.enumerated() {
-            story.image = user.stories[index].image
-        }
-        for (index, story) in storiesNamesImageViews.enumerated() {
-            story.text = user.stories[index].name
+        for (index, (storyImage, storyName)) in zip(storiesImageViews, storiesNamesImageViews).enumerated()  {
+            let story = user.stories[index]
+            storyImage.image = story.image
+            storyName.text = story.name
         }
         for (index, post) in postsImageViews.enumerated() {
             post.image = user.posts[index]
