@@ -393,14 +393,9 @@
                                                 </state>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f4n-sq-TuN">
-                                                <rect key="frame" x="27" y="432" width="177" height="30"/>
+                                                <rect key="frame" x="27" y="439" width="177" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <imageReference key="image" image="Grid"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W7n-Iq-bYc">
-                                                <rect key="frame" x="225" y="432" width="177" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <imageReference key="image" image="profile"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVD-6X-sb3">
                                                 <rect key="frame" x="0.0" y="470" width="414" height="479"/>
@@ -450,6 +445,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W7n-Iq-bYc">
+                                                <rect key="frame" x="225" y="439" width="177" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <imageReference key="image" image="profile"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
@@ -477,7 +477,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h0x-dc-ghA">
                                         <rect key="frame" x="273" y="8" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <imageReference key="image" image="shopping "/>
+                                        <imageReference key="image" image="shopping"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TD8-ln-tsu">
                                         <rect key="frame" x="31" y="8" width="30" height="30"/>
@@ -499,28 +499,12 @@
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ildarrr1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1a-K0-IiZ">
-                                <rect key="frame" x="144" y="49" width="144" height="30"/>
+                                <rect key="frame" x="161" y="50" width="144" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BM-of-V1P">
-                                <rect key="frame" x="302" y="50" width="43" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="new post"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoj-2j-FRh">
-                                <rect key="frame" x="353" y="53" width="47" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="menu"/>
-                                </buttonConfiguration>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SVF-kA-ptm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -533,7 +517,6 @@
                     </view>
                     <connections>
                         <outlet property="accountNameLabel" destination="m1a-K0-IiZ" id="FR4-0g-aws"/>
-                        <outlet property="addPostButton" destination="2BM-of-V1P" id="Fp3-TG-E2Z"/>
                         <outlet property="avatarImageView" destination="0ob-Br-A8G" id="CZU-2o-sq1"/>
                         <outlet property="callButton" destination="M05-5r-y7y" id="ywW-0T-yN9"/>
                         <outlet property="descriptionLabel" destination="vxi-Ah-Oew" id="EUt-Oc-GXq"/>
@@ -542,7 +525,6 @@
                         <outlet property="firstSavedImageView" destination="YxW-n1-TXP" id="2Iz-8T-tyf"/>
                         <outlet property="followersCountLabel" destination="7dg-Sg-Nle" id="23A-AO-p5t"/>
                         <outlet property="howToGetThereButton" destination="F8u-vU-9gF" id="8SG-NR-adx"/>
-                        <outlet property="menuButton" destination="zoj-2j-FRh" id="MrU-WI-fjQ"/>
                         <outlet property="postsCountLabel" destination="cY7-KZ-F3w" id="EnC-RV-WD8"/>
                         <outlet property="postsView" destination="qVD-6X-sb3" id="qfI-J9-pe6"/>
                         <outlet property="realNameLabel" destination="HCb-Ei-dd5" id="d97-Cf-x2k"/>
@@ -585,14 +567,12 @@
         <image name="cezer" width="1440" height="960"/>
         <image name="home" width="23" height="24"/>
         <image name="kompot" width="2000" height="1333"/>
-        <image name="menu" width="29" height="29"/>
-        <image name="new post" width="29" height="29"/>
         <image name="pie" width="1280" height="720"/>
         <image name="pizza" width="1024" height="768"/>
         <image name="profile" width="29" height="29"/>
         <image name="reels" width="29" height="29"/>
         <image name="search" width="29" height="29"/>
-        <image name="shopping " width="29" height="29"/>
+        <image name="shopping" width="29" height="29"/>
         <image name="sushi" width="800" height="520"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

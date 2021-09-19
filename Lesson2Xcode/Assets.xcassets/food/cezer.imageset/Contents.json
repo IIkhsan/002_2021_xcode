@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "salat-cezar-s-syrom-pomidorami-kuricei-i-suxarikami_1617622037_14_max.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

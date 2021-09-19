@@ -11,9 +11,9 @@ class InstagramUIViewController: UIViewController {
     
     private var images: [UIImage] = [#imageLiteral(resourceName: "cezer"), #imageLiteral(resourceName: "pie"), #imageLiteral(resourceName: "sushi"), #imageLiteral(resourceName: "beer"), #imageLiteral(resourceName: "pizza"), #imageLiteral(resourceName: "kompot"), #imageLiteral(resourceName: "beshbarmak")]
 
-    @IBOutlet weak var accountNameLabel: UILabel!
-    @IBOutlet weak var addPostButton: UIButton!
+            
     @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var accountNameLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var postsCountLabel: UILabel!
     @IBOutlet weak var followersCountLabel: UILabel!
@@ -54,7 +54,8 @@ class InstagramUIViewController: UIViewController {
         thirdSavedImageView.image = images[3]
         firstPublicationImageView.image = images[4]
         secondPublicationImageView.image = images[5]
-        thirdSavedImageView.image = images[6]
+        thirdPublicationImageView.image = images[6]
+        
         subscribeCountLabel.text = Int.random(in: 0..<100).description
         followersCountLabel.text = Int.random(in: 0..<100).description
         
