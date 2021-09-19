@@ -49,20 +49,20 @@ class ThirdViewController: UIViewController {
         mix()
     }
     func mix() {
-        navigationItem.title = nicknames.randomElement()!
-        profileImageView.image = photos.randomElement()!
-        firstPostImageView.image = photos.randomElement()!
-        secondPostImageView.image = photos.randomElement()!
-        thirdPostImageView.image = photos.randomElement()!
+        navigationItem.title = nicknames.randomElement()
+        profileImageView.image = photos.randomElement() ?? UIImage(named: "1")
+        firstPostImageView.image = photos.randomElement() ?? UIImage(named: "1")
+        secondPostImageView.image = photos.randomElement() ?? UIImage(named: "1")
+        thirdPostImageView.image = photos.randomElement() ?? UIImage(named: "1")
         postsLabel.text = "3"
         followingLabel.text = "\(Int.random(in: 50...1000))"
         followersLabel.text = "\(Int.random(in: 50...1000))"
-        bioLabel.text = titles.randomElement()!
-        firstStoryImageView.image = photos.randomElement()!
-        secondStoryImageView.image = photos.randomElement()!
-        thirdStoryImageView.image = photos.randomElement()!
-        firstStoryLabel.text = storyTitles.randomElement()!
-        secondStoryLabel.text = storyTitles.randomElement()!
-        thirdStoryLabel.text = storyTitles.randomElement()!
+        bioLabel.text = titles.randomElement()
+        firstStoryImageView.image = photos.randomElement() ?? UIImage(named: "1")
+        secondStoryImageView.image = photos.randomElement() ?? UIImage(named: "1")
+        thirdStoryImageView.image = photos.randomElement() ?? UIImage(named: "1")
+        firstStoryLabel.text = storyTitles.randomElement()
+        secondStoryLabel.text = storyTitles.randomElement()
+        thirdStoryLabel.text = storyTitles.randomElement()
     }
 }
