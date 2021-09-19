@@ -20,10 +20,10 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var changeButton: UIButton!
     
     let profileImages = [
-        UIImage(named: "narutoProfile"),
-        UIImage(named: "hinataProfile"),
-        UIImage(named: "sasukeProfile"),
-    ]
+        String("narutoProfile"),
+        String("hinataProfile"),
+        String("sasukeProfile"),
+    ] 
     
     let randomPhrases = ["gg", "strong", "fast"]
     
@@ -36,7 +36,7 @@ class SecondViewController: UIViewController {
     }
     
     func update() {
-        imageView.image = profileImages.randomElement()!
+        imageView.image = profileImages.compactMap({ UIImage(named: $0) }).randomElement()
         label.text = randomPhrases.randomElement()
         swith.isOn.toggle()
         textField.backgroundColor = .red

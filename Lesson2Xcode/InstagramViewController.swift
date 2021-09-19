@@ -51,9 +51,9 @@ class InstagramViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     
     let profileImages = [
-        UIImage(named: "narutoProfile"),
-        UIImage(named: "hinataProfile"),
-        UIImage(named: "sasukeProfile"),
+        String("narutoProfile"),
+        String("hinataProfile"),
+        String("sasukeProfile"),
     ] 
     
     let profileNames = ["animeFan", "deadInside", "swiftDeveloper"]
@@ -74,19 +74,19 @@ class InstagramViewController: UIViewController {
     
     func update() {
         title = profileNames.randomElement()
-        profileImageView.image = profileImages.randomElement()!
+        profileImageView.image = profileImages.compactMap({ UIImage(named: $0) }).randomElement()
         subscribersCounterLabel.text = String(Int.random(in: 5...1000))
         subscriptionsCounterLabel.text = String(Int.random(in: 5...1000))
         firstStoryLabel.text = phrases.randomElement()
         secondStoryLabel.text = phrases.randomElement()
         thirdStoryLabel.text = phrases.randomElement()
         bioLabel.text = discriptions.randomElement()
-        firstPhotoImageView.image = profileImages.randomElement()!
-        secondPhotoImageView.image = profileImages.randomElement()!
-        thirdPhotoImageView.image = profileImages.randomElement()!
-        firstStoryImageView.image = profileImages.randomElement()!
-        secondStoryImageView.image = profileImages.randomElement()!
-        thirdStoryImageView.image = profileImages.randomElement()!
+        firstPhotoImageView.image = profileImages.compactMap({ UIImage(named: $0) }).randomElement()
+        secondPhotoImageView.image = profileImages.compactMap({ UIImage(named: $0) }).randomElement()
+        thirdPhotoImageView.image = profileImages.compactMap({ UIImage(named: $0) }).randomElement()
+        firstStoryImageView.image = profileImages.compactMap({ UIImage(named: $0) }).randomElement()
+        secondStoryImageView.image = profileImages.compactMap({ UIImage(named: $0) }).randomElement()
+        thirdStoryImageView.image = profileImages.compactMap({ UIImage(named: $0) }).randomElement()
     }
     
 }
