@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Lesson2Xcode
+//  SecondLessonHomework
 //
-//  Created by i.ikhsanov on 14.09.2021.
+//  Created by Renat Murtazin on 17.09.2021.
 //
 
 import UIKit
