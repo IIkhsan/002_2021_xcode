@@ -28,13 +28,14 @@ class InstagramViewController: UIViewController {
     @IBOutlet weak var firstUserPostImage: UIImageView!
     @IBOutlet weak var usernameNavigationItem: UINavigationItem!
     @IBOutlet weak var scrollView: UIScrollView!
-    let firstUser: InstagramUser = InstagramUser(username: "gdan", userImage: UIImage(named: "userImage")!, userFullName: "Dan Gerasimov", userSpeciality: "Comedian", userDescription: "Cool guy", userPublicationAmount: 3, userSubscribersAmount: 500, userSubscriptionAmount: 2, firstHighlightImage: UIImage(named: "firstUserFirstHighlightImage")!, secondHighlightImage: UIImage(named: "firstUserSecondHighlightImage")!, thirdHighlightImage: UIImage(named: "firstUserSecondHighlightImage")!, thirdUserPostImage: UIImage(named: "thirdUserPostImage")!, secondUserPostImage: UIImage(named: "secondUserPostImage")!, firstUserPostImage: UIImage(named: "firstUserPostImage")!)
-    let secondUser: InstagramUser = InstagramUser(username: "robertdowneyjr", userImage: UIImage(named: "secondUserImage")!, userFullName: "Robert Downey Jr.", userSpeciality: "Actor", userDescription: "Iron man", userPublicationAmount: 3, userSubscribersAmount: 999, userSubscriptionAmount: 1, firstHighlightImage: UIImage(named: "secondUserFirstHighlightImage")!, secondHighlightImage: UIImage(named: "secondUserSecondHighlightImage")!, thirdHighlightImage: UIImage(named: "secondUserThirdHighlightImage")!, thirdUserPostImage: UIImage(named: "post3")!, secondUserPostImage: UIImage(named: "post2")!, firstUserPostImage: UIImage(named: "post1")!)
+   
+    let firstUser: InstagramUser = InstagramUser(username: "gdan", userFullName: "Dan Gerasimov", userSpeciality: "Comedian", userDescription: "Cool guy", userPublicationAmount: 3, userSubscribersAmount: 500, userSubscriptionAmount: 2)
+    let secondUser: InstagramUser = InstagramUser(username: "robertdowneyjr", userFullName: "Robert Downey Jr.", userSpeciality: "Actor", userDescription: "Iron man", userPublicationAmount: 3, userSubscribersAmount: 999, userSubscriptionAmount: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fillAllImageViews()
         setFirstUserInfo()
-        
         changeButton.layer.borderColor = UIColor.systemGray2.cgColor
         placeButton.layer.borderColor = UIColor.systemGray2.cgColor
         editInfoButton.layer.borderColor = UIColor.systemGray2.cgColor
@@ -82,7 +83,78 @@ class InstagramViewController: UIViewController {
         secondUserPostImage.image = secondUser.secondUserPostImage
         firstUserPostImage.image = secondUser.firstUserPostImage
     }
-    
+    func fillAllImageViews() {
+        guard let firstUserImage = UIImage(named: "userImage") else {
+            print("Not found")
+            return
+        }
+        guard let firstHighlightImage = UIImage(named: "firstUserFirstHighlightImage") else {
+            print("Not found")
+            return
+        }
+        guard let secondHighlightImage = UIImage(named: "firstUserSecondHighlightImage") else {
+            print("Not found")
+            return
+        }
+        guard let thirdHighlightImage = UIImage(named: "firstUserThirdHighlightImage") else {
+            print("Not found")
+            return
+        }
+        guard let thirdUserPostImage = UIImage(named: "firstUserPostImage") else {
+            print("Not found")
+            return
+        }
+        guard let secondUserPostImage = UIImage(named: "secondUserPostImage") else {
+            print("Not found")
+            return
+        }
+        guard let firstUserPostImage = UIImage(named: "firstUserPostImage") else {
+            print("Not found")
+            return
+        }
+        firstUser.userImage = firstUserImage
+        firstUser.firstHighlightImage = firstHighlightImage
+        firstUser.secondHighlightImage = secondHighlightImage
+        firstUser.thirdHighlightImage = thirdHighlightImage
+        firstUser.thirdUserPostImage = thirdUserPostImage
+        firstUser.secondUserPostImage = secondUserPostImage
+        firstUser.firstUserPostImage = firstUserPostImage
+        guard let secondUserImage = UIImage(named: "secondUserImage") else {
+            print("Not found")
+            return
+        }
+        guard let secondUserFirstHighlightImage = UIImage(named: "secondUserFirstHighlightImage") else {
+            print("Not found")
+            return
+        }
+        guard let secondUserSecondHighlightImage = UIImage(named: "secondUserSecondHighlightImage") else {
+            print("Not found")
+            return
+        }
+        guard let secondUserThirdHighlightImage = UIImage(named: "secondUserThirdHighlightImage") else {
+            print("Not found")
+            return
+        }
+        guard let post1 = UIImage(named: "post1") else {
+            print("Not found")
+            return
+        }
+        guard let post2 = UIImage(named: "post2") else {
+            print("Not found")
+            return
+        }
+        guard let post3 = UIImage(named: "post3") else {
+            print("Not found")
+            return
+        }
+        secondUser.userImage = secondUserImage
+        secondUser.firstHighlightImage = secondUserFirstHighlightImage
+        secondUser.secondHighlightImage = secondUserSecondHighlightImage
+        secondUser.thirdHighlightImage = secondUserThirdHighlightImage
+        secondUser.thirdUserPostImage = post1
+        secondUser.secondUserPostImage = post2
+        secondUser.firstUserPostImage = post3
+    }
     
     /*
      // MARK: - Navigation
