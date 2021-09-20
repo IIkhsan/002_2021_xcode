@@ -325,7 +325,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9xw-05-LYq">
-                                <rect key="frame" x="169" y="551" width="49" height="31"/>
+                                <rect key="frame" x="167" y="498" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tu-EG-xSs">
@@ -348,7 +348,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </slider>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sUc-ve-vNK">
-                                <rect key="frame" x="144" y="389" width="97" height="34"/>
+                                <rect key="frame" x="147" y="381" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -358,7 +358,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSq-hj-iTb">
-                                <rect key="frame" x="25" y="457" width="349" height="53"/>
+                                <rect key="frame" x="16" y="437" width="349" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="Button"/>
@@ -366,6 +366,18 @@
                                     <action selector="componentButtonAction:" destination="coN-cV-6Wn" eventType="primaryActionTriggered" id="dPh-Qo-vX8"/>
                                 </connections>
                             </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Kr2-Qd-jXI">
+                                <rect key="frame" x="143" y="537" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stepper>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qn1-He-GJv">
+                                <rect key="frame" x="115" y="171" width="150" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ojx-bg-cP6">
+                                <rect key="frame" x="0.0" y="588" width="390" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bnY-fa-NbU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -374,8 +386,11 @@
                     <connections>
                         <outlet property="componentButton" destination="XSq-hj-iTb" id="gB6-7w-yXt"/>
                         <outlet property="componentLabel" destination="3tu-EG-xSs" id="RnZ-g6-CVi"/>
+                        <outlet property="componentPickerView" destination="Ojx-bg-cP6" id="2s6-5L-Nnp"/>
+                        <outlet property="componentProgressView" destination="qn1-He-GJv" id="Jvg-ym-kET"/>
                         <outlet property="componentSegmentedControl" destination="Zny-OG-hLy" id="iN3-K3-X6f"/>
                         <outlet property="componentSlider" destination="m2e-Xf-kUD" id="KOk-aQ-piE"/>
+                        <outlet property="componentStepper" destination="Kr2-Qd-jXI" id="QAD-FL-dok"/>
                         <outlet property="componentSwitch" destination="9xw-05-LYq" id="wCj-iJ-wij"/>
                         <outlet property="componentTextField" destination="sUc-ve-vNK" id="5V0-yc-m6g"/>
                     </connections>

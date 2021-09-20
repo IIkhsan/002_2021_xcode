@@ -15,6 +15,10 @@ class ComponentsViewContoller: UIViewController {
     @IBOutlet weak var componentTextField: UITextField!
     @IBOutlet weak var componentButton: UIButton!
     @IBOutlet weak var componentSwitch: UISwitch!
+    @IBOutlet weak var componentProgressView: UIProgressView!
+    @IBOutlet weak var componentStepper: UIStepper!
+    @IBOutlet weak var componentPickerView: UIPickerView!
+    
     var counter: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +36,9 @@ class ComponentsViewContoller: UIViewController {
             componentSegmentedControl.setTitle("Perfect", forSegmentAt: 0)
             componentSegmentedControl.setTitle("Worst", forSegmentAt: 1)
             componentSegmentedControl.selectedSegmentIndex = 0
+            componentProgressView.progress = 100
+            componentStepper.backgroundColor = UIColor.green
+            componentPickerView.backgroundColor = UIColor.green
         } else {
             componentLabel.text = "Not even :("
             componentSwitch.setOn(false, animated: true)
@@ -41,6 +48,9 @@ class ComponentsViewContoller: UIViewController {
             componentSegmentedControl.setTitle("Perfect", forSegmentAt: 0)
             componentSegmentedControl.setTitle("Worst", forSegmentAt: 1)
             componentSegmentedControl.selectedSegmentIndex = 1
+            componentProgressView.progress = 0
+            componentStepper.backgroundColor = UIColor.red
+            componentPickerView.backgroundColor = UIColor.red
         }
         counter += 1
     }
