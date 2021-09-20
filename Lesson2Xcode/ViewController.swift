@@ -8,12 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func instaProfileAction(_ sender: Any) {
+        guard let instaProfileController = storyboard?.instantiateViewController(withIdentifier: "InstaProfileViewController") as? InstaProfileViewController else { return }
+        
+        navigationController?.pushViewController(instaProfileController, animated: true)
+    }
+    
+    
+    @IBAction func componentsAction(_ sender: Any) {
+        guard let componentsController = storyboard?.instantiateViewController(withIdentifier: "ComponentsViewController") as? ComponentsViewController else { return }
+        present(componentsController, animated: true, completion: nil)
+    }
+    
+    
+    
+    
+    
 }
 
