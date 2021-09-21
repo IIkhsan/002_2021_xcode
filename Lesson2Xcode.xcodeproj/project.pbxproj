@@ -13,6 +13,8 @@
 		5EFCD63426F0F28F009A09F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFCD63226F0F28F009A09F4 /* Main.storyboard */; };
 		5EFCD63626F0F292009A09F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFCD63526F0F292009A09F4 /* Assets.xcassets */; };
 		5EFCD63926F0F292009A09F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFCD63726F0F292009A09F4 /* LaunchScreen.storyboard */; };
+		CF1A208C26F8681700BB9352 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A208B26F8681700BB9352 /* FirstScreenViewController.swift */; };
+		CF1A208E26F8F20F00BB9352 /* InstaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A208D26F8F20F00BB9352 /* InstaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5EFCD63526F0F292009A09F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EFCD63826F0F292009A09F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EFCD63A26F0F292009A09F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF1A208B26F8681700BB9352 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		CF1A208D26F8F20F00BB9352 /* InstaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				5EFCD63526F0F292009A09F4 /* Assets.xcassets */,
 				5EFCD63726F0F292009A09F4 /* LaunchScreen.storyboard */,
 				5EFCD63A26F0F292009A09F4 /* Info.plist */,
+				CF1A208B26F8681700BB9352 /* FirstScreenViewController.swift */,
+				CF1A208D26F8F20F00BB9352 /* InstaViewController.swift */,
 			);
 			path = Lesson2Xcode;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EFCD63126F0F28F009A09F4 /* ViewController.swift in Sources */,
+				CF1A208C26F8681700BB9352 /* FirstScreenViewController.swift in Sources */,
 				5EFCD62D26F0F28F009A09F4 /* AppDelegate.swift in Sources */,
+				CF1A208E26F8F20F00BB9352 /* InstaViewController.swift in Sources */,
 				5EFCD62F26F0F28F009A09F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
