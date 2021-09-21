@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28D2450926F929F400B2696E /* ComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2450826F929F400B2696E /* ComponentsViewController.swift */; };
+		28D2450B26FA260B00B2696E /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2450A26FA260B00B2696E /* InstagramViewController.swift */; };
 		5EFCD62D26F0F28F009A09F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFCD62C26F0F28F009A09F4 /* AppDelegate.swift */; };
 		5EFCD62F26F0F28F009A09F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFCD62E26F0F28F009A09F4 /* SceneDelegate.swift */; };
 		5EFCD63126F0F28F009A09F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFCD63026F0F28F009A09F4 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28D2450826F929F400B2696E /* ComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsViewController.swift; sourceTree = "<group>"; };
+		28D2450A26FA260B00B2696E /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		5EFCD62926F0F28F009A09F4 /* Lesson2Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson2Xcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFCD62C26F0F28F009A09F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EFCD62E26F0F28F009A09F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				5EFCD63526F0F292009A09F4 /* Assets.xcassets */,
 				5EFCD63726F0F292009A09F4 /* LaunchScreen.storyboard */,
 				5EFCD63A26F0F292009A09F4 /* Info.plist */,
+				28D2450826F929F400B2696E /* ComponentsViewController.swift */,
+				28D2450A26FA260B00B2696E /* InstagramViewController.swift */,
 			);
 			path = Lesson2Xcode;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			files = (
 				5EFCD63126F0F28F009A09F4 /* ViewController.swift in Sources */,
 				5EFCD62D26F0F28F009A09F4 /* AppDelegate.swift in Sources */,
+				28D2450926F929F400B2696E /* ComponentsViewController.swift in Sources */,
 				5EFCD62F26F0F28F009A09F4 /* SceneDelegate.swift in Sources */,
+				28D2450B26FA260B00B2696E /* InstagramViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
