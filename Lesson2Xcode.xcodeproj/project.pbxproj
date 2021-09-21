@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09678BB826FA0509000F644F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09678BB726FA0509000F644F /* ProfileViewController.swift */; };
+		09678BBA26FA249B000F644F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09678BB926FA2497000F644F /* SettingsViewController.swift */; };
 		5EFCD62D26F0F28F009A09F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFCD62C26F0F28F009A09F4 /* AppDelegate.swift */; };
 		5EFCD62F26F0F28F009A09F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFCD62E26F0F28F009A09F4 /* SceneDelegate.swift */; };
 		5EFCD63126F0F28F009A09F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFCD63026F0F28F009A09F4 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09678BB726FA0509000F644F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		09678BB926FA2497000F644F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5EFCD62926F0F28F009A09F4 /* Lesson2Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson2Xcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFCD62C26F0F28F009A09F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EFCD62E26F0F28F009A09F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +63,9 @@
 				5EFCD62C26F0F28F009A09F4 /* AppDelegate.swift */,
 				5EFCD62E26F0F28F009A09F4 /* SceneDelegate.swift */,
 				5EFCD63026F0F28F009A09F4 /* ViewController.swift */,
+				09678BB726FA0509000F644F /* ProfileViewController.swift */,
 				5EFCD63226F0F28F009A09F4 /* Main.storyboard */,
+				09678BB926FA2497000F644F /* SettingsViewController.swift */,
 				5EFCD63526F0F292009A09F4 /* Assets.xcassets */,
 				5EFCD63726F0F292009A09F4 /* LaunchScreen.storyboard */,
 				5EFCD63A26F0F292009A09F4 /* Info.plist */,
@@ -139,6 +145,8 @@
 			files = (
 				5EFCD63126F0F28F009A09F4 /* ViewController.swift in Sources */,
 				5EFCD62D26F0F28F009A09F4 /* AppDelegate.swift in Sources */,
+				09678BB826FA0509000F644F /* ProfileViewController.swift in Sources */,
+				09678BBA26FA249B000F644F /* SettingsViewController.swift in Sources */,
 				5EFCD62F26F0F28F009A09F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,13 +295,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 939KD425D9;
+				DEVELOPMENT_TEAM = Z95P383GBF;
 				INFOPLIST_FILE = Lesson2Xcode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.itis.Lesson2Xcode;
+				PRODUCT_BUNDLE_IDENTIFIER = voxsie.Lesson2Xcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,13 +314,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 939KD425D9;
+				DEVELOPMENT_TEAM = Z95P383GBF;
 				INFOPLIST_FILE = Lesson2Xcode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.itis.Lesson2Xcode;
+				PRODUCT_BUNDLE_IDENTIFIER = voxsie.Lesson2Xcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
