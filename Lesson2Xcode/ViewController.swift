@@ -9,11 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var componentsButton: UIButton!
+    @IBOutlet weak var instagramButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        componentsButton.layer.cornerRadius = 15
+        instagramButton.layer.cornerRadius = 15
     }
-
-
 }
-
