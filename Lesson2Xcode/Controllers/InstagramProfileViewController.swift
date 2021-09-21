@@ -37,13 +37,13 @@ class InstagramProfileViewController: UIViewController {
         anim.fromValue = 1
         anim.toValue = 5
         anim.duration = 0.3
-        callBtn.layer.add(anim, forKey: "Width")
+        messageBtn.layer.add(anim, forKey: "Width")
         
         // restore state
-        callBtn.layer.borderWidth = 1
+        messageBtn.layer.borderWidth = 1
     }
     
-    @IBAction func onCallClicked(_ sender: UIButton) {
+    @IBAction func onMessageClicked(_ sender: UIButton) {
         let n = (1...13).shuffled()
         
         // update the posts
