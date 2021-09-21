@@ -23,13 +23,17 @@ class ComponentsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pickerView.dataSource = self
+        pickerView.delegate = self
         
     }
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        presentingViewController?.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func changeAllButtonPressed(_ sender: Any) {
-        counterLabel.text = "0"
-        stepper.value = 0
+        counterLabel.text = String((Int(counterLabel.text ?? "0") ?? 0)+1)
         
         let index = segmentedControl.selectedSegmentIndex
         if index + 1 < segmentedControl.numberOfSegments {
@@ -41,8 +45,8 @@ class ComponentsViewController: UIViewController {
         uiSwitch.isOn = !uiSwitch.isOn
         
         let horizontalSliderValue = horizontalSlider.value
-        if horizontalSliderValue + 0.2 < horizontalSlider.maximumValue {
-            horizontalSlider.value = horizontalSliderValue + 0.2
+        if horizontalSliderValue + 25 < horizontalSlider.maximumValue {
+            horizontalSlider.value = horizontalSliderValue + 25
         }else{
             horizontalSlider.value =
                 horizontalSliderValue - horizontalSlider.maximumValue
@@ -56,6 +60,8 @@ class ComponentsViewController: UIViewController {
                 progressValue - 1
         }
         
+        pickerView.selectRow(Int.random(in: 0..<4), inComponent: 0, animated: true)
+        
     }
     
     
@@ -63,7 +69,24 @@ class ComponentsViewController: UIViewController {
         counterLabel.text = String(stepper.value)
     }
     
-    
-    
 }
 
+extension UIViewController: UIPickerViewDataSource {
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        1
+    }
+    
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        4
+    }
+}
+
+extension UIViewController: UIPickerViewDelegate {
+    public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let seasons: [String] = ["winter", "spring", "summer", "autumn"]
+        return seasons[row]
+    }
+    
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    }
+}
