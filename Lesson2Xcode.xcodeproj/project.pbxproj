@@ -13,6 +13,8 @@
 		5EFCD63426F0F28F009A09F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFCD63226F0F28F009A09F4 /* Main.storyboard */; };
 		5EFCD63626F0F292009A09F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFCD63526F0F292009A09F4 /* Assets.xcassets */; };
 		5EFCD63926F0F292009A09F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFCD63726F0F292009A09F4 /* LaunchScreen.storyboard */; };
+		D644FC1E26F76537001303AA /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D644FC1D26F76537001303AA /* FirstScreenViewController.swift */; };
+		D644FC2026F7655F001303AA /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D644FC1F26F7655F001303AA /* SecondScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5EFCD63526F0F292009A09F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EFCD63826F0F292009A09F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EFCD63A26F0F292009A09F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D644FC1D26F76537001303AA /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		D644FC1F26F7655F001303AA /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				5EFCD63526F0F292009A09F4 /* Assets.xcassets */,
 				5EFCD63726F0F292009A09F4 /* LaunchScreen.storyboard */,
 				5EFCD63A26F0F292009A09F4 /* Info.plist */,
+				D644FC1D26F76537001303AA /* FirstScreenViewController.swift */,
+				D644FC1F26F7655F001303AA /* SecondScreenViewController.swift */,
 			);
 			path = Lesson2Xcode;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EFCD63126F0F28F009A09F4 /* ViewController.swift in Sources */,
+				D644FC2026F7655F001303AA /* SecondScreenViewController.swift in Sources */,
+				D644FC1E26F76537001303AA /* FirstScreenViewController.swift in Sources */,
 				5EFCD62D26F0F28F009A09F4 /* AppDelegate.swift in Sources */,
 				5EFCD62F26F0F28F009A09F4 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.itis.Lesson2Xcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.itis.Lesson2Xcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
