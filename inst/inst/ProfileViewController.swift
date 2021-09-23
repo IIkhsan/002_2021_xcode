@@ -16,27 +16,12 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func directMeAction(_ sender: Any) {
-        let value = Int.random(in: 1...1000)
-        let valueToString: String = String(value)
-        subscribesLabel.text = valueToString
-        subsLabel.text = valueToString
-        pubsLabel.text = valueToString
-        descriptionTextView.text = "нет"
+        subscribesLabel.text = String(Int.random(in: 0...1000))
+        subsLabel.text = String(Int.random(in: 0...1000))
+        pubsLabel.text = String(Int.random(in: 0...1000))
+        descriptionTextView.text = "блин под конец реально интересно стало, ты супер!"
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
