@@ -32,6 +32,14 @@ class InstagramViewController: UIViewController {
     }
     
     @IBAction func pageChange(_ sender: Any) {
+        changeInf()
+    }
+    
+    @IBAction func pageChangeByCall(_ sender: Any) {
+       changeInf()
+    }
+    
+    func changeInf() {
         numberOfSubscribers.text = String(Int.random(in: 2...200))
         numberOfSubscriptions.text = String(Int.random(in: 2...20))
         
