@@ -8,8 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var componentsButton: UIButton!
-    @IBOutlet weak var profileButton: UIButton!
     
     @IBAction func componentsButtonAction(_ sender: Any) {
         guard let componentsVC = storyboard?.instantiateViewController(withIdentifier: "ComponentsViewController") else { return }

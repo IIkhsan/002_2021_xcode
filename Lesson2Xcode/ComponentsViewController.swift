@@ -44,27 +44,27 @@ class ComponentsViewController: UIViewController, UIPickerViewDataSource, UIPick
         stepperLabel.text = String(sender.value)
     }
     
-    @IBAction func ChangeLabelButtonAction(_ sender: Any) {
+    @IBAction func changeLabelButtonAction(_ sender: Any) {
         label.text = "Changed!"
         label.textColor = UIColor.red
     }
     
-    @IBAction func ChangePickerViewButtonAction(_ sender: Any) {
+    @IBAction func changePickerViewButtonAction(_ sender: Any) {
         pickerViewComponents.append("Added")
         pickerView.reloadAllComponents()
     }
     
-    @IBAction func ChangeProgressBarButtonAction(_ sender: Any) {
+    @IBAction func changeProgressBarButtonAction(_ sender: Any) {
         progessBarValue += 0.1
         progressBar.progress = progessBarValue
     }
     
-    @IBAction func ChangeSliderButton(_ sender: Any) {
+    @IBAction func changeSliderButton(_ sender: Any) {
         sliderValue += 0.1
         slider.setValue(sliderValue, animated: true)
     }
     
-    @IBAction func ChangeSwitchButtonAction(_ sender: Any) {
+    @IBAction func changeSwitchButtonAction(_ sender: Any) {
         if switchIsOn {
             switchIsOn = false
         } else {
@@ -74,7 +74,7 @@ class ComponentsViewController: UIViewController, UIPickerViewDataSource, UIPick
         switchUI.setOn(switchIsOn, animated: true)
     }
     
-    @IBAction func ChangeSegmentedControlAction(_ sender: Any) {
+    @IBAction func changeSegmentedControlAction(_ sender: Any) {
         if segmentedControlIndex == 0 {
             segmentedControlIndex = 1
         } else {
@@ -84,7 +84,8 @@ class ComponentsViewController: UIViewController, UIPickerViewDataSource, UIPick
         segmentedControl.selectedSegmentIndex = segmentedControlIndex
     }
     
-    @IBAction func ChangeButtonButtonAction(_ sender: Any) {
+    @IBAction func changeButtonButtonAction(_ sender: Any) {
         button.setTitle("Changed", for: .normal)
     }
+    
 }
